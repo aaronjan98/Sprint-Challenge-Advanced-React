@@ -5,10 +5,10 @@ class DataList extends Component {
 
   render (){
     return (
-      <div className="DataList">
+      <div className="DataList" data-testid="datalist" >
         { Data.data.map((individual, index) => {
             return (
-              <div className="DataList" key={index}>
+              <div className="DataList" data-testid="datalist-items" key={index}>
                 <div className="DataInfo">
                     <h4>{individual.name}</h4>
                     <p>Country: {individual.country}</p>
