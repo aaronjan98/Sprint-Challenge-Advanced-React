@@ -8,10 +8,12 @@ class DataList extends Component {
       <div className="DataList">
         { Data.data.map((individual, index) => {
             return (
-              <div key={index}>
-                <h4>{individual.name}</h4>
-                <p>Country: {individual.country}</p>
-                <p>Searches: {individual.searches}</p>
+              <div className="DataList" key={index}>
+                <div className="DataInfo">
+                    <h4>{individual.name}</h4>
+                    <p>Country: {individual.country}</p>
+                    <p>Searches: {individual.searches}</p>
+                </div>
               </div>
             );
           })
