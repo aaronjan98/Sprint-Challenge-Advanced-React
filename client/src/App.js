@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './components/NavBar';
 import DataList from './components/DataList';
-import './App.css';
+import './styles/App.css';
 
 class App extends Component {
 
